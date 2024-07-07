@@ -1,7 +1,7 @@
 import cv2
 import cv2.aruco as aruco
 
-cap=cv2.VideoCapture(r"\\wsl.localhost\Ubuntu-20.04\home\bhumika\task3_ws\src\aruco.mp4")
+cap=cv2.VideoCapture("aruco.mp4")
 dic=aruco.getPredefinedDictionary(aruco.DICT_6X6_1000)
 params=aruco.DetectorParameters()
 
