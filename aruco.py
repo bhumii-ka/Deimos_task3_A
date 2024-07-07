@@ -1,7 +1,7 @@
 import cv2
 import cv2.aruco as aruco
 
-cap=cv2.VideoCapture(r"C:\Users\dell\Videos\aruco.mp4")
+cap=cv2.VideoCapture(r"\\wsl.localhost\Ubuntu-20.04\home\bhumika\task3_ws\src\aruco.mp4")
 dic=aruco.getPredefinedDictionary(aruco.DICT_6X6_1000)
 params=aruco.DetectorParameters()
 
@@ -10,7 +10,7 @@ params=aruco.DetectorParameters()
 while True:
     res,frame=cap.read()
     if not res:
-        print("can't open camera")
+        print("can't open file")
         break
     
     (corners,mark_id,rejected)=aruco.detectMarkers(frame,dic,parameters=params)
@@ -38,4 +38,4 @@ while True:
     
     
     cv2.imshow("frame",frame)
-    cv2.waitKey(1)   
+    cv2.waitKey(2)   
