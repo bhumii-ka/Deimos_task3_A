@@ -125,7 +125,7 @@ Inside turtlebot3_gazebo package you can make `scripts` directory and write a su
   ```
   rosrun turtlebot3_gazebo aruco_detect.py
   ```
-  Or you can launch it along with the world by adding the following in the launch file of the world before closing the <launch> tag
+  Or you can launch it along with the world by adding the following in the launch file of the world before `</launch>` tag
   ```
   <node name= "aruco_detect" pkg= "turtlebot3_gazebo" type="aruco_detect.py" output="screen" required = "true"/>
   ```
